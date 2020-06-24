@@ -4,10 +4,27 @@
     <meta charset="utf-8">
     <title>Oggetto studenti</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.js"></script>
   </head>
   <body>
+    <div class="class_container">
 
+    </div>
+
+    <!-- Template di handlebars -->
+    <script id="entry-template" type="text/x-handlebars-template">
+      <div class="single_student">
+        <span>{{nome}}</span>
+        <span>{{cognome}}</span>
+        <span>{{eta}}</span>
+      </div>
+    </script>
+    <!-- Fine template di handlebars -->
+
+
+    <!-- Mio file javascript -->
     <script type="text/javascript" src="js/script.js"></script>
+    <!-- Fine mio file javascript -->
 
   </body>
 </html>
