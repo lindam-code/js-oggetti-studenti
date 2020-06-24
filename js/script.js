@@ -68,10 +68,9 @@ $(document).ready(function(){
   // FUNZIONI
   // Creo la funzione per stampare la lista degli studenti con handlerbars
   function stampaListaStudenti() {
+    var source = $('#entry-template').html();
+    var template = Handlebars.compile(source);
     for (var i = 0; i < arrayClasse.length; i++) {
-
-      var source = $('#entry-template').html();
-      var template = Handlebars.compile(source);
 
       var singoloStudente = arrayClasse[i];
       var html = template(singoloStudente);
