@@ -66,23 +66,4 @@ $(document).ready(function(){
     $('.class_new').append(html);
   }
 
-  // FUNZIONI
-  // Creo funzione per stampare a schermo un singolo oggetto studente
-  function stampaStudente(infoStudente) {
-    var source = $('#entry-template').html();
-    var template = Handlebars.compile(source);
-    var html = template(infoStudente);
-    $('.student_container').append(html);
-  };
-
-  // Creo la funzione per stampare la lista degli studenti in un array con handlerbars
-  function stampaListaStudenti() {
-    var source = $('#entry-template').html();
-    var template = Handlebars.compile(source);
-    for (var i = 0; i < arrayClasse.length; i++) {
-      var singoloStudente = arrayClasse[i];
-      var html = template(singoloStudente);
-      $('.class_container').append(html);
-    }
-  }
 });
